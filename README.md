@@ -25,7 +25,8 @@ Please include a description of the CLI tool here
 Include installation instructions with an example
 
 ```sh
-TBD
+brew tap trussworks/tap
+brew install my-cli-tool
 ```
 
 ## Usage
