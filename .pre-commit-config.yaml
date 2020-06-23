@@ -21,11 +21,11 @@ repos:
     hooks:
       - id: markdownlint
 
-  - repo: local
-    hooks:
-      - id: goreleaser-check
-        name: Validate goreleaser config  yaml
-        entry: goreleaser check
-        language: system
-        files: '.goreleaser.yml'
-        pass_filenames: false
+  - repo: git://github.com/trussworks/pre-commit-hooks
+     rev: v0.0.4
+     hooks:
+       - id: circleci-validate
+       - id: goreleaser-check
+       - id: markdown-toc
+       - id: mdspell
+       - id: spelling-sort
