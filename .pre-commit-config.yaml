@@ -22,10 +22,7 @@ repos:
       - id: markdownlint
 
   - repo: git://github.com/trussworks/pre-commit-hooks
-     rev: v0.0.4
-     hooks:
-       - id: circleci-validate
-       - id: goreleaser-check
-       - id: markdown-toc
-       - id: mdspell
-       - id: spelling-sort
+    rev: v0.0.4
+    hooks:
+      - id: circleci-validate
+      - id: goreleaser-check
