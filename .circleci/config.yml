@@ -1,12 +1,12 @@
 version: 2.1
 
 references:
-  circleci-docker-primary: &circleci-docker-primary trussworks/circleci-docker-primary:385c300cc218b910b6fd2da8041fe848001cecf4
+  circleci: &circleci trussworks/circleci:29ab89fdada1f85c5d8fb685a2c71660f0c5f60c
 
 jobs:
   validate:
     docker:
-      - image: *circleci-docker-primary
+      - image: *circleci
     steps:
       - checkout
       - restore_cache:
@@ -21,7 +21,7 @@ jobs:
             - ~/.cache/pre-commit
   release:
     docker:
-      - image: *circleci-docker-primary
+      - image: *circleci
     steps:
       - checkout
       - setup_remote_docker
