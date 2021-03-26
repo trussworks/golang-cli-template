@@ -14,7 +14,7 @@ builds:
   main: main.go
 brews:
   - description: "my-cli-tool is an example."
-    github:
+    tap:
       owner: trussworks
       name: homebrew-tap
     homepage: "https://github.com/trussworks/my-cli-tool"
@@ -23,7 +23,7 @@ brews:
       email: infra+github@truss.works
 dockers:
   -
-    binaries:
+    ids:
       - my-cli-tool
     image_templates:
       - "trussworks/my-cli-tool:{{ .Tag }}"
