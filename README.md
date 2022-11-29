@@ -12,9 +12,9 @@ purposes.
 1. Run `go mod tidy` to update the `go.mod` and `go.sum` files
 1. Build your tool with `go build .`
 
-## Actual readme below  - Delete above here
+## Actual readme below - Delete above here
 
-# my-binary
+## my-binary
 
 ## Description
 
